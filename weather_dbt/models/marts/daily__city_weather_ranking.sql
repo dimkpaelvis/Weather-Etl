@@ -1,0 +1,11 @@
+{{ config(materialized='table') }}
+
+SELECT
+    city,
+    ROUND(AVG(temperature_c)::numeric, 2) AS avg_temp,
+    ROUND(AVG(relative_humidity)::numeric, 2) AS humidity,
+    ROUND(AVG(wind_speed)::numeric, 2) AS wind
+FROM {{ ref('stg_weather') }}
+WHERE DATE(time) = CURRENT_DATE
+GROUP BY city
+ORDER BY avg_temp DESC

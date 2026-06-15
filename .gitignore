@@ -1,0 +1,10 @@
+logs/
+weather_dbt/logs/
+weather_dbt/target/
+__pycache__/
+.env
+.vscode/
+
+logs/
+weather_dbt/logs/
+*.log
