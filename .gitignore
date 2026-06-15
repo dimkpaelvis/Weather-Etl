@@ -5,3 +5,6 @@ __pycache__/
 .env
 .vscode/
 
+logs/
+weather_dbt/logs/
+*.log
