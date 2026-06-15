@@ -1,0 +1,10 @@
+
+target/
+dbt_packages/
+logs/
+.env
+
+logs/
+.env
+__pycache__/
+.vscode/
