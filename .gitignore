@@ -1,10 +1,16 @@
-logs/
-weather_dbt/logs/
-weather_dbt/target/
-__pycache__/
+# Secrets
 .env
-.vscode/
 
+# Logs
 logs/
 weather_dbt/logs/
 *.log
+
+# dbt artifacts
+weather_dbt/target/
+
+# Python
+__pycache__/
+
+# VSCode
+.vscode/
